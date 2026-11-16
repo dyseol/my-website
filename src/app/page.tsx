@@ -84,11 +84,11 @@ export default function Home() {
 
           <div className="flex items-center space-x-3">
             <a
-              href="tel:01020788788"
+              href="#consultation"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#C8A97E]/50 text-xs text-[#C8A97E] hover:bg-[#C8A97E]/10 transition-all font-medium"
             >
-              <PhoneCall className="w-3.5 h-3.5" />
-              <span>긴급 직통 전화</span>
+              <MessageSquare className="w-3.5 h-3.5" />
+              <span>24시 비밀 문의</span>
             </a>
             <a
               href="#consultation"
@@ -140,11 +140,11 @@ export default function Home() {
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="tel:01020788788"
+              href="#specialties"
               className="w-full sm:w-auto px-7 py-4 rounded-xl border border-[#163D2F] bg-[#0A1D16]/60 backdrop-blur text-sm sm:text-base font-medium text-[#BAC7C0] hover:text-white hover:border-[#C8A97E]/50 transition-all flex items-center justify-center gap-2"
             >
-              <PhoneCall className="w-4 h-4 text-[#C8A97E]" />
-              <span>24시 직통 상담: 010-2078-8788</span>
+              <Search className="w-4 h-4 text-[#C8A97E]" />
+              <span>주력 조사 분야 살펴보기</span>
             </a>
           </div>
 
@@ -423,15 +423,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* 탐정 1 */}
+            {/* 탐정 1: 코난 */}
             <div className="p-8 rounded-2xl bg-[#0A1D16] border border-[#163D2F] flex flex-col justify-between">
               <div>
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-14 h-14 rounded-full bg-[#163D2F] border border-[#C8A97E]/40 flex items-center justify-center text-[#C8A97E] font-bold text-xl">
-                    강
+                    코
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">강신우 대표 탐정</h3>
+                    <h3 className="text-xl font-bold text-white">코난 대표 탐정</h3>
                     <p className="text-xs text-[#C8A97E] mt-0.5">현장 채증 및 사실관계 재구성 총괄</p>
                   </div>
                 </div>
@@ -439,22 +439,22 @@ export default function Home() {
                   &ldquo;수사관이 보지 못한 현장의 1mm를 찾아내는 것이 제 역할입니다. 가해자가 거짓으로 둘러친 벽을 현장 증거로 무너뜨리겠습니다.&rdquo;
                 </p>
                 <div className="space-y-2 border-t border-[#163D2F] pt-4 text-xs text-[#8E9F97]">
-                  <p>· 국가공인 탐정사(PIA) 자격 취득</p>
-                  <p>· 강력·형사 사건 현장 사실조사 10년 경력</p>
-                  <p>· CCTV 및 영상 분석 전문 과정 수료</p>
+                  <p>· 공인 탐정 자격 및 사실조사 전문 과정 이수</p>
+                  <p>· 형사·범죄 피해 사건 현장 채증 전담</p>
+                  <p>· CCTV 각도별 동선 재구성 및 영상 분석 전문</p>
                 </div>
               </div>
             </div>
 
-            {/* 탐정 2 */}
+            {/* 탐정 2: 베카 */}
             <div className="p-8 rounded-2xl bg-[#0A1D16] border border-[#163D2F] flex flex-col justify-between">
               <div>
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-14 h-14 rounded-full bg-[#163D2F] border border-[#C8A97E]/40 flex items-center justify-center text-[#C8A97E] font-bold text-xl">
-                    서
+                    베
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">서도진 대표 탐정</h3>
+                    <h3 className="text-xl font-bold text-white">베카 대표 탐정</h3>
                     <p className="text-xs text-[#C8A97E] mt-0.5">디지털 포렌식 및 가해자 소재 추적 총괄</p>
                   </div>
                 </div>
@@ -462,9 +462,9 @@ export default function Home() {
                   &ldquo;지워진 디지털 흔적, 위장된 주소지, 숨겨둔 재산은 반드시 흔적을 남깁니다. 피해자의 정당한 권리를 되찾아드리겠습니다.&rdquo;
                 </p>
                 <div className="space-y-2 border-t border-[#163D2F] pt-4 text-xs text-[#8E9F97]">
-                  <p>· 디지털 포렌식 분석 전문가</p>
-                  <p>· 지능형 금융 사기 및 은닉 자산 추적 전문</p>
-                  <p>· 한국공인탐정협회 정회원</p>
+                  <p>· 디지털 포렌식 데이터 분석 전문</p>
+                  <p>· 지능형 금융 사기 및 은닉 자산 추적 전담</p>
+                  <p>· 사이버 증거 무결성 입증 및 가해자 특정 분석</p>
                 </div>
               </div>
             </div>
@@ -622,23 +622,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. 위치 및 긴급 직통 연락망 안내 */}
+      {/* 8. 긴급 접수 안내 */}
       <section className="py-16 px-4 sm:px-6 border-t border-[#163D2F]/50 bg-[#06130E]">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
-            <span className="text-xs text-[#C8A97E] font-medium tracking-wider uppercase">Direct Line</span>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">24시간 긴급 피해 대응 접수</h3>
+            <span className="text-xs text-[#C8A97E] font-medium tracking-wider uppercase">Direct Assistance</span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">24시간 비밀 상담 접수 채널</h3>
             <p className="text-xs sm:text-sm text-[#8E9F97] mt-1">
-              급박한 위협이나 증거 인멸 우려가 있는 경우 지체 없이 직통 전화로 연락주세요.
+              급박한 위협이나 증거 인멸 우려가 있는 경우 1:1 비밀 상담 접수를 남겨주시면 대표 탐정이 즉시 확인합니다.
             </p>
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="tel:01020788788"
+              href="#consultation"
               className="px-6 py-3.5 rounded-xl bg-[#0F2B21] border border-[#C8A97E]/50 text-[#C8A97E] font-bold text-base hover:bg-[#163D2F] transition-all flex items-center gap-2"
             >
-              <PhoneCall className="w-4 h-4" />
-              <span>010-2078-8788</span>
+              <Lock className="w-4 h-4" />
+              <span>온라인 비밀 상담 신청하기</span>
             </a>
           </div>
         </div>
@@ -650,8 +650,8 @@ export default function Home() {
           <div className="text-center md:text-left">
             <p className="font-bold text-[#BAC7C0] text-sm mb-1">탐정사무소 코난 (CONAN PI)</p>
             <p className="leading-relaxed">
-              대표 탐정: 강신우 · 서도진 | 사업자등록번호: 164-53-00955<br />
-              소재지: 서울특별시 서초구 서초대로 / 경기도 부천시 부일로 | 직통: 010-2078-8788
+              대표 탐정: 코난 · 베카 | 사업자등록번호: [등록 예정]<br />
+              소재지: [추후 업데이트 예정] | 연락처: [상담 폼 접수 후 안내]
             </p>
             <p className="text-[11px] text-[#556960] mt-2">
               ※ 탐정사무소 코난은 신용정보법 및 개인정보보호법 등 관련 법령을 엄격히 준수하며, 일체의 불법 도청·위치추적·해킹 의뢰는 받지 않습니다.
@@ -664,18 +664,18 @@ export default function Home() {
       {/* 10. 모바일 플로팅 긴급 상담 바 */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-[#06130E]/95 backdrop-blur border-t border-[#163D2F] flex gap-2">
         <a
-          href="tel:01020788788"
+          href="#specialties"
           className="flex-1 py-3 rounded-xl bg-[#0F2B21] border border-[#C8A97E]/40 text-[#C8A97E] text-xs font-bold flex items-center justify-center gap-1.5"
         >
-          <PhoneCall className="w-3.5 h-3.5" />
-          <span>긴급 전화 연결</span>
+          <Search className="w-3.5 h-3.5" />
+          <span>조사 분야</span>
         </a>
         <a
           href="#consultation"
-          className="flex-[1.2] py-3 rounded-xl bg-gradient-to-r from-[#C8A97E] to-[#AA8A5F] text-[#06130E] text-xs font-extrabold flex items-center justify-center gap-1.5 shadow-lg shadow-[#C8A97E]/20"
+          className="flex-[1.4] py-3 rounded-xl bg-gradient-to-r from-[#C8A97E] to-[#AA8A5F] text-[#06130E] text-xs font-extrabold flex items-center justify-center gap-1.5 shadow-lg shadow-[#C8A97E]/20"
         >
           <Lock className="w-3.5 h-3.5 text-[#06130E]" />
-          <span>1:1 비밀 상담</span>
+          <span>1:1 익명 비밀 상담</span>
         </a>
       </div>
     </div>
