@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "법률사무소 로앤이 | 오직 피해자만 변호합니다",
-  description: "억울하고 힘든 상황에 처한 피해자의 눈물을 닦고 일상을 되찾을 수 있도록 처음부터 끝까지 함께합니다.",
+  title: "탐정사무소 코난 | 진실은 언제나 하나 · 범죄 피해자 전담",
+  description: "가해자의 거짓말은 수십 가지이지만, 당신이 겪은 진실은 언제나 하나입니다. 2인의 대표 탐정이 '증거 불충분'의 벽을 깨고 법정의 적법한 증거를 찾아냅니다.",
+  keywords: ["탐정사무소 코난", "범죄피해자탐정", "증거불충분", "합법증거수집", "사실조사", "스토킹증거", "사기피해추적"],
+  openGraph: {
+    title: "탐정사무소 코난 | 진실은 언제나 하나",
+    description: "범죄 피해자 전담 2인 공인탐정사무소. 100% 합법 증거주의 · 대표 탐정 직접 수행 · 정보 영구 파기.",
+    type: "website",
+    locale: "ko_KR",
+  },
 };
 
 export default function RootLayout({
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="min-h-screen antialiased bg-[#F9FAF9] text-[#1B2421]">
+      <body className="min-h-screen bg-[#06130E] text-[#E6EBE8] antialiased selection:bg-[#C8A97E]/30 selection:text-[#F4EDE4]">
         {children}
       </body>
     </html>
