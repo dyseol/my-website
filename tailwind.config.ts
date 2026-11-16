@@ -10,24 +10,30 @@ const config: Config = {
     extend: {
       colors: {
         conan: {
-          950: "#06130E", // 가장 깊은 시네마틱 블랙그린
-          900: "#0A1D16", // 메인 딥그린 배경
-          800: "#0F2B21", // 카드 및 서피스 배경
-          700: "#163D2F", // 호버 및 보더
-          600: "#225844", // 포인트 그린
+          950: "#06130E", // 베이스 다크 블랙그린
+          900: "#0A1D16", // 서브 다크그린
+          800: "#0F2B21", // 카드 및 서피스
+          700: "#163D2F", // 보더 및 구분선
+          600: "#225844", // 인터랙션 하이라이트
           500: "#2F755B",
         },
         champagne: {
           300: "#F4EDE4",
-          400: "#E3D3C1",
-          500: "#C8A97E", // 메인 샴페인 골드
+          400: "#DFCAAC",
+          500: "#C8A97E", // 브랜드 샴페인 골드
           600: "#AA8A5F",
           700: "#866943",
         },
+        text: {
+          primary: "#FFFFFF",
+          body: "#E6EBE8",
+          muted: "#8E9F97",
+          subtle: "#5F736A",
+        },
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Noto Serif KR", "Batang", "serif"],
-        sans: ["Pretendard", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Noto Serif KR", "serif"],
+        sans: ["var(--font-sans)", "Pretendard", "sans-serif"],
       },
     },
   },
